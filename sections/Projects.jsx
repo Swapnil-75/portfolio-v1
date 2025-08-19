@@ -17,16 +17,16 @@ const projects = [
     techstack: ['Next.js', 'Cloudflare D1']
   },
   {
-    title: 'BlockMart',
-    description: 'A e-commerce platform built on Ethereum blockchain.',
+    title: 'Polyzon',
+    description: 'A modular smart contract deployed as an e-commerce platform',
     image: '/assets/BlockMart.png',
-    codebaseLink: 'https://github.com/Viraj2722/Polyzon',
+    codebaseLink: 'https://github.com/xydv/polyzon-sol',
     previewLink: 'https://polyzon.vercel.app',
     techstack: ['Solidity', 'Ethereum', 'Next.js']
   },
   {
     title: 'CodeX',
-    description: 'A fully responsive website designed for CodeX-SFIT',
+    description: 'A fully responsive website for CodeX-SFIT',
     image: '/assets/CodeX.png',
     codebaseLink: '',
     previewLink: 'https://codex.sfit.ac.in',
@@ -40,14 +40,6 @@ const projects = [
     previewLink: '',
     techstack: ['Vite.js', 'Solana']
   },
-  {
-    title: 'Portfolio',
-    description: 'A modern portfolio website made with pain',
-    image: '/assets/Portfolio.png',
-    codebaseLink: '',
-    previewLink: 'https://parthesh28.vercel.app',
-    techstack: ['Next.js']
-  }
 ];
 
 const ProjectCard = ({ project, index }) => (
