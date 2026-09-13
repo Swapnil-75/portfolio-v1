@@ -6,7 +6,7 @@ import useSectionInView from '../hooks/useSectionInView'
 import { Download, Github, Linkedin } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from '../app/components/ui/avatar'
 
-const words = ["Swapnil", "Full Stack Developer", "Software Engineer"]
+const roles = ["Full Stack Developer", "Software Engineer"]
 
 export default function Home() {
   const [index, setIndex] = useState(0)
@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % words.length)
+      setIndex((prevIndex) => (prevIndex + 1) % roles.length)
     }, 3000)
     return () => clearInterval(interval)
   }, [])
@@ -25,7 +25,7 @@ export default function Home() {
       ref={ref}
       className="min-h-screen relative overflow-hidden"
     >
-      <div className="relative flex flex-col items-center justify-center min-h-screen px-4 py-16 space-y-16">
+      <div className="relative flex flex-col items-center justify-center min-h-screen px-4 pt-32 pb-24 sm:pt-40 sm:pb-16 space-y-16">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, y: 20, rotateZ: -5 }}
@@ -57,40 +57,30 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <div className="text-center space-y-10">
-          <div className="h-20 flex items-center justify-center">
-            <AnimatePresence mode="wait">
-              <motion.h1
-                key={words[index]}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.5 }}
-                className="text-6xl sm:text-7xl font-bold text-zinc-900 dark:text-zinc-100"
-              >
-                {words[index].split('').map((char, i) => (
-                  <motion.span
-                    key={`${char}-${i}`}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.05 }}
-                    className="inline-block"
-                  >
-                    {char}
-                  </motion.span>
-                ))}
-              </motion.h1>
-            </AnimatePresence>
-          </div>
-
-          <motion.p
+        <div className="text-center space-y-6">
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 font-light tracking-wide"
+            transition={{ duration: 0.6 }}
+            className="text-5xl sm:text-7xl font-bold text-zinc-900 dark:text-zinc-100 tracking-tight"
           >
-            Full Stack Developer
-          </motion.p>
+            Swapnil Singh
+          </motion.h1>
+
+          <div className="h-10 flex items-center justify-center">
+            <AnimatePresence mode="wait">
+              <motion.p
+                key={roles[index]}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.4 }}
+                className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 font-light tracking-wide"
+              >
+                {roles[index]}
+              </motion.p>
+            </AnimatePresence>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
