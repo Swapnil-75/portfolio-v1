@@ -5,25 +5,25 @@ import { Badge } from "../app/components/ui/badge"
 
 const educationTimeline = [
     {
-        year: "2017 - 2019",
+        year: "2019 - 2021",
         title: "Schooling",
-        description: "Cleared Secondary and Higher Secondary Exams",
+        description: "Higher Secondary Certificate (HSC) - 74%",
         icon: School
     },
     {
-        year: "2022-2026",
+        year: "2022 - 2026",
         title: "Degree",
-        description: "B.E. in Computer Engineering",
+        description: "B.E. in Computer Engineering (CGPA: 8.0)",
         icon: GraduationCap
     }
 ]
 
 const tools = [
-    "Git", "Expo", "VS Code", "Android Studio", "Nodejs"
+    "Git", "GitHub", "Docker", "Azure DevOps", "Microsoft Azure", "AWS"
 ]
 
 const skills = [
-    "TypeScript", "React-Native", "Next.js", "Hono",  "Java"
+    "TypeScript", "C#", "Java", "Angular", "Next.js", "Spring Boot"
 ]
 
 const MotionCard = motion(Card)

@@ -6,7 +6,7 @@ import useSectionInView from '../hooks/useSectionInView'
 import { Download, Github, Linkedin } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from '../app/components/ui/avatar'
 
-const words = ["Parthesh", "Developer", "Engineer"]
+const words = ["Swapnil", "Full Stack Developer", "Software Engineer"]
 
 export default function Home() {
   const [index, setIndex] = useState(0)
@@ -45,11 +45,11 @@ export default function Home() {
                 <Avatar className="h-full w-full relative overflow-hidden shadow-lg">
                   <AvatarImage
                     src='/assets/Profile_Picture.jpg'
-                    alt="Parthesh Purohit"
+                    alt="Swapnil Singh"
                     className="object-cover scale-110 hover:scale-125 transition-transform duration-700"
                   />
                   <AvatarFallback className="text-4xl font-bold bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
-                    PP
+                    SS
                   </AvatarFallback>
                 </Avatar>
               </div>
@@ -89,7 +89,7 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 0.5 }}
             className="text-xl md:text-2xl text-zinc-500 dark:text-zinc-400 font-light tracking-wide"
           >
-            Android Developer | Blockchain Enthusiast
+            Full Stack Developer
           </motion.p>
 
           <motion.div

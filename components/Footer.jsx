@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center space-y-4">
           <div className="h-px w-16 bg-zinc-300 dark:bg-zinc-700 mb-1"></div>
           <p className="text-sm text-zinc-500 dark:text-zinc-400 text-center tracking-wide">
-            &copy; {new Date().getFullYear()}  Parthesh Purohit.
+            &copy; {new Date().getFullYear()}  Swapnil Singh.
           </p>
           <p className="text-xs text-zinc-400 font-bold dark:text-zinc-500 text-center tracking-wider pt-1">
             Made with pain  T_T

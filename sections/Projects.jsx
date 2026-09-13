@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import useSectionInView from '../hooks/useSectionInView';
 import { Card, CardContent } from "../app/components/ui/card";
@@ -9,36 +8,32 @@ import { Code, Eye, EyeOff, Link2Off } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Pulp',
-    description: 'An easy to use code-sharing platform for students',
-    image: '/assets/Pulp.png',
-    codebaseLink: 'https://github.com/sfitdevs/pulp-frontend',
-    previewLink: 'https://pulp.yadav.id',
-    techstack: ['Next.js', 'Cloudflare D1']
-  },
-  {
-    title: 'Polyzon',
-    description: 'A modular smart contract deployed as an e-commerce platform',
-    image: '/assets/BlockMart.png',
-    codebaseLink: 'https://github.com/xydv/polyzon-sol',
-    previewLink: 'https://polyzon.vercel.app',
-    techstack: ['Solidity', 'Ethereum', 'Next.js']
-  },
-  {
-    title: 'CodeX',
-    description: 'A fully responsive website for CodeX-SFIT',
-    image: '/assets/CodeX.png',
+    title: 'Trustlens AI',
+    description: 'A real-time log-monitoring and anomaly detection platform with automated alert mechanisms, built on a high-throughput Redis Streams event pipeline.',
     codebaseLink: '',
-    previewLink: 'https://codex.sfit.ac.in',
-    techstack: ['Next.js']
+    previewLink: '',
+    techstack: ['Node.js', 'TypeScript', 'PostgreSQL', 'Redis', 'Docker']
   },
   {
-    title: 'Symphony Ledger',
-    description: 'Ledger for music on Solana',
-    image: '/assets/Symphony.png',
-    codebaseLink: 'https://github.com/Parthesh28/Symphony_Ledger',
+    title: 'Travex',
+    description: 'A centralized visit and reimbursement management platform digitizing manual email workflows, with authenticated RESTful endpoints for approval tracking.',
+    codebaseLink: '',
     previewLink: '',
-    techstack: ['Vite.js', 'Solana']
+    techstack: ['React.js', 'Node.js', 'Express', 'PostgreSQL']
+  },
+  {
+    title: 'Task Flow',
+    description: 'A project scheduling platform with interactive milestone tracking, JWT-based RBAC, and critical-path analysis for automated dependency mapping.',
+    codebaseLink: '',
+    previewLink: '',
+    techstack: ['Node.js', 'React.js', 'MongoDB', 'JWT']
+  },
+  {
+    title: 'PESCA',
+    description: 'An interactive DSA learning app with 30+ GSAP-driven algorithm visualizations, an in-browser code editor, and a markdown note-taking workspace.',
+    codebaseLink: '',
+    previewLink: '',
+    techstack: ['React.js', 'Redux', 'GSAP']
   },
 ];
 
@@ -51,16 +46,6 @@ const ProjectCard = ({ project, index }) => (
   >
     <Card className="group h-full bg-zinc-100/70 dark:bg-zinc-900/70 backdrop-blur-sm rounded-2xl">
       <CardContent className="p-0 flex flex-col h-full">
-        <div className="relative aspect-video overflow-hidden rounded-t-2xl">
-          <Image
-            src={project.image}
-            alt={project.title}
-            width={500}
-            height={300}
-            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/30 via-zinc-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-        </div>
         <div className="p-6 flex flex-col gap-4 flex-grow">
           <div>
             <h3 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-2">

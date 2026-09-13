@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Instagram, Github, Linkedin, Coffee, Mail, ArrowRight } from 'lucide-react'
+import { Github, Linkedin, Mail, ArrowRight } from 'lucide-react'
 import { Card, CardContent } from '../app/components/ui/card'
 import { Separator } from '../app/components/ui/separator'
 import { Tooltip, TooltipProvider, TooltipTrigger, TooltipContent } from '../app/components/ui/tooltip'
@@ -9,29 +9,19 @@ import useSectionInView from '../hooks/useSectionInView'
 
 export default function Contact() {
   const { ref } = useSectionInView("Connect", 0.3)
-  const email = 'partheshpurohit23@gmail.com'
+  const email = 'sswapnil1091@gmail.com'
 
   const socialLinks = [
     {
-      icon: Instagram,
-      href: 'https://www.instagram.com/parthesh28/',
-      label: 'Follow me on Instagram',
-    },
-    {
       icon: Github,
-      href: 'https://github.com/Parthesh28',
+      href: 'https://github.com/Swapnil-75',
       label: 'Check my GitHub',
     },
     {
       icon: Linkedin,
-      href: 'https://www.linkedin.com/company/partheshpurohit',
+      href: 'https://www.linkedin.com/in/swapnil-singh-b3b94a1b3',
       label: 'Connect on LinkedIn',
     },
-    {
-      icon: Coffee,
-      href: 'https://www.buymeacoffee.com/parthesh28',
-      label: 'Support Me!',
-    }
   ]
 
   const containerVariants = {
