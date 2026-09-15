@@ -27,8 +27,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
-        >
+          className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-zinc-900 dark:text-zinc-100">About Me</h2>
           <div className="h-1 w-24 bg-primary rounded-full mx-auto mt-6"></div>
         </motion.div>
